@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroller"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_margin"
+    tools:context=".EmotionEditor">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/myGrid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:verticalSpacing="10dp"
+
+            android:horizontalSpacing="10dp"
+            android:numColumns="3"
+            android:columnWidth="60dp"
+            android:stretchMode="columnWidth"
+
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:text="name"/>
+        <!-- Overview category -->
+        <LinearLayout
+            android:id="@+id/name_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                android:text="@string/category_overview"
+                style="@style/CategoryStyle" />
+
+            <!-- Input fields -->
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:paddingLeft="4dp"
+                android:orientation="vertical">
+
+                <!-- Name field -->
+                <EditText
+                    android:id="@+id/edit_activity"
+                    android:hint="Activity"
+                    android:inputType="textCapWords"
+                    style="@style/EditorFieldStyle" />
+
+                <!-- Breed field -->
+                <EditText
+                    android:id="@+id/edit_where"
+                    android:hint="Where"
+                    android:inputType="textCapWords"
+                    style="@style/EditorFieldStyle" />
+                <EditText
+                    android:id="@+id/edit_whom"
+                    android:hint="whom"
+                    android:inputType="textCapWords"
+                    style="@style/EditorFieldStyle" />
+                <EditText
+                    android:id="@+id/edit_description"
+                    android:hint="Descriptiom"
+                    android:inputType="textCapWords"
+                    style="@style/EditorFieldStyle" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Gender category -->
+        <!--<LinearLayout-->
+        <!--android:layout_below="@id/name_category"-->
+        <!--android:id="@+id/container_gender"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--&lt;!&ndash; Label &ndash;&gt;-->
+        <!--<TextView-->
+        <!--android:text="@string/stock_title"-->
+        <!--style="@style/CategoryStyle" />-->
+
+        <!--&lt;!&ndash; Input field &ndash;&gt;-->
+        <!--<LinearLayout-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_weight="2"-->
+        <!--android:orientation="vertical">-->
+
+        <!--&lt;!&ndash; Gender drop-down spinner &ndash;&gt;-->
+        <!--<EditText-->
+        <!--android:id="@+id/stock_editor"-->
+        <!--android:hint="@string/price_hint"-->
+        <!--android:inputType="number"-->
+        <!--style="@style/EditorFieldStyle" />-->
+        <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
+
+        <!--&lt;!&ndash; Measurement category &ndash;&gt;-->
+        <!--<LinearLayout-->
+        <!--android:layout_below="@id/container_gender"-->
+        <!--android:id="@+id/container_measurement"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--&lt;!&ndash; Label &ndash;&gt;-->
+        <!--<TextView-->
+        <!--android:text="@string/price_title"-->
+        <!--style="@style/CategoryStyle" />-->
+
+        <!--&lt;!&ndash; Input fields &ndash;&gt;-->
+        <!--<RelativeLayout-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_weight="2"-->
+        <!--android:paddingLeft="4dp">-->
+
+        <!--&lt;!&ndash; Weight field &ndash;&gt;-->
+        <!--<EditText-->
+        <!--android:id="@+id/edit_pet_weight"-->
+        <!--android:hint="@string/price_hint"-->
+        <!--android:inputType="number"-->
+        <!--style="@style/EditorFieldStyle" />-->
+
+        <!--&lt;!&ndash; Units for weight (kg) &ndash;&gt;-->
+        <!--<TextView-->
+        <!--android:id="@+id/label_weight_units"-->
+        <!--android:text="@string/currency_type"-->
+        <!--style="@style/EditorUnitsStyle"/>-->
+        <!--</RelativeLayout>-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+        <!--android:layout_below="@id/container_measurement"-->
+        <!--android:id="@+id/amount_sold"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+        <!--<TextView-->
+        <!--android:text="@string/amount_sold"-->
+        <!--style="@style/CategoryStyle" />-->
+
+        <!--&lt;!&ndash; Input fields &ndash;&gt;-->
+        <!--<RelativeLayout-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_weight="2"-->
+        <!--android:paddingLeft="4dp">-->
+
+        <!--&lt;!&ndash; Weight field &ndash;&gt;-->
+        <!--<TextView-->
+        <!--android:id="@+id/amount_sold_tv"-->
+        <!--android:text="0"-->
+        <!--style="@style/EditorFieldStyle" />-->
+        <!--</RelativeLayout>-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:gravity="bottom">-->
+        <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical">-->
+        <!--<TextView-->
+        <!--android:id="@+id/sell_tv"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:text="Sell"/>-->
+        <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/sell"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="@dimen/fab_margin"-->
+        <!--android:src="@drawable/ic_sell_floater"/>-->
+        <!--</LinearLayout>-->
+        <!--<View-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1">-->
+
+        <!--</View>-->
+        <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical">-->
+        <!--<TextView-->
+        <!--android:id="@+id/order_more_tv"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:text="Order more"/>-->
+        <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/order"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="@dimen/fab_margin"-->
+        <!--android:src="@drawable/ic_order_more"/>-->
+        <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
+    </LinearLayout>
+
+
+</ScrollView>

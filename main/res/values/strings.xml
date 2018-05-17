@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Inventory App</string>
+    <string name="category_overview">Item Name</string>
+    <string name="edit_item_title">Edit Item</string>
+    <string name="add_item_title">Add Item</string>
+    <string name="stock_title">Stock</string>
+    <string name="name_hint">Name</string>
+    <string name="desctiption_hint">Desctiption</string>
+    <string name="price_title">Price</string>
+    <string name="currency_type">$</string>
+    <string name="price_hint">Enter Price</string>
+    <string name="product_insertion_toast_failed">Insert product failed</string>
+    <string name="product_insertion_toast_success">Insert product success</string>
+    <string name="update_product_fail">Could not update</string>
+    <string name="update_product_success">Update Success!</string>
+    <string name="delete_item">Delete</string>
+    <string name="action_save">Save</string>
+    <string name="unsaved_changes_dialog_msg">Discard your changes and exit editor?</string>
+    <string name="discard_button">discard</string>
+    <string name="keep_editing">Keep Editing</string>
+    <string name="delete_item_dialog">Delete this Item?</string>
+    <string name="delete">delete</string>
+    <string name="error_during_deletion">Error with deleting item</string>
+    <string name="delete_success">Item deleted</string>
+    <string name="cancel_deletion">Cancel</string>
+    <string name="empty_list_title">Cat needs a list to play with :(</string>
+    <string name="empty_add_item_text">Get started by adding a new item</string>
+    <string name="sell_button">Sell</string>
+    <string name="subtract">-</string>
+    <string name="cancel_button_sell">Cancel</string>
+    <string name="amount_sold">Amount Sold</string>
+    <string name="out_of_stock">Out of stock. Please order more.</string>
+    <string name="sell_dialog_title">Amount to sell?</string>
+    <string name="order_amount_string">Order Amount?</string>
+</resources>

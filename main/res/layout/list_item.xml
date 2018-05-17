@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_card">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Name: "
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#2B3D4D" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/product"
+                android:fontFamily="sans-serif-medium"
+                android:paddingBottom="10dp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#212121" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#BEBEBE" />
+
+            <RelativeLayout
+                android:id="@+id/numbers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/description">
+
+                <TextView
+                    android:id="@+id/activity_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="Activity: "
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="#BEBEBE" />
+
+                <TextView
+                    android:id="@+id/activities"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/activity_title"
+                    android:fontFamily="sans-serif"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="#BEBEBE" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/sold_title"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:fontFamily="sans-serif"-->
+                <!--android:text="Amount Sold: "-->
+                <!--android:textAppearance="?android:textAppearanceSmall"-->
+                <!--android:textColor="#BEBEBE" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/sold"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+
+                <!--android:layout_toEndOf="@id/sold_title"-->
+                <!--android:fontFamily="sans-serif"-->
+                <!--android:textAppearance="?android:textAppearanceSmall"-->
+                <!--android:textColor="#BEBEBE" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/price"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:fontFamily="sans-serif"-->
+                <!--android:textAppearance="?android:textAppearanceSmall"-->
+                <!--android:textColor="#BEBEBE" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/price_title"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_toStartOf="@id/price"-->
+                <!--android:fontFamily="sans-serif"-->
+                <!--android:text="Price: "-->
+                <!--android:textAppearance="?android:textAppearanceSmall"-->
+                <!--android:textColor="#BEBEBE" />-->
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/playSymbol"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:alpha="0.3"
+
+            android:src="@mipmap/ic_launcher"
+
+            />
+    </LinearLayout>
+</FrameLayout>
